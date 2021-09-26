@@ -1,0 +1,30 @@
+.navBar{
+    height: auto;
+    background-color: white;
+}
+
+.logo{
+    border-bottom: 3px groove #000;
+}
+
+.nav__item{
+    height: auto;
+    font-size: 1.9rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+#modoClaro{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+#buscar{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 1rem;
+}
