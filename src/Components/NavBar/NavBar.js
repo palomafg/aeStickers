@@ -19,9 +19,9 @@ const NavBar = () => {
                         <FiSun />
                     </button>
                     
-                    <a className="nav__item col-1 m-2 p-1" href=""> <ImEye/> </a>
-                    <a className="nav__item col-1 m-2 p-1" href=""> <GiNoseFront/> </a>
-                    <a className="nav__item col-1 m-2 p-1" href=""> <GiLips/> </a>
+                    <a className="nav__item col-1 m-2 p-1" href="#"> <ImEye/> </a>
+                    <a className="nav__item col-1 m-2 p-1" href="#"> <GiNoseFront/> </a>
+                    <a className="nav__item col-1 m-2 p-1" href="#"> <GiLips/> </a>
 
                     <CartWidget/>
                     

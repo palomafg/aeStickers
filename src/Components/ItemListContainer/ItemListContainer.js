@@ -1,10 +1,11 @@
+import ItemCount from "../ItemCount/ItemCount";
 
 
 const ItemListContainer = () => {
     return (
         <>
 
-            <p>Aca van los items</p>
+            <ItemCount initial={1} stock={9}/>
             
         </>
     );
