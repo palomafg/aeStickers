@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Item from '../Item/Item';
 import sticker1 from '../../multimedia/stck1.png';
 import sticker2 from '../../multimedia/stck2.png';
@@ -38,12 +38,12 @@ const ItemList = () => {
         
     });
 
-    let stks = [];
+    const [stks, setStks] = useState([]);
 
     getStickers
         .then(response => {
             console.log(response);
-            response.map(stk => stks.push(stk));
+            setStks(response);
         })
         .catch(error => {
             console.log(error);
@@ -53,9 +53,10 @@ const ItemList = () => {
 
     return (
         <div className="row">
-            <Item img={sticker1} title='Ojo' price='28'/>
+            {stks.map(s => <Item key={s.id} img={s.img} title={s.title} price={s.price}/> )}
+            {/* <Item img={sticker1} title='Ojo' price='28'/>
             <Item img={sticker2} title='Nariz' price='34'/>
-            <Item img={sticker3} title='Boca' price='79'/>
+            <Item img={sticker3} title='Boca' price='79'/> */}
         </div>
     );
 
