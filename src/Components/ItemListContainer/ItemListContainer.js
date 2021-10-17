@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 
-import stickers from '../../data/stickers.json';
-import Item from '../Item/Item';
+import { stickers } from '../../data/StickerList.js';
+import ItemList from '../ItemList/ItemList.js';
 
-const ItemListContainer = () => {
+const ItemListContainer = ( { ctg } ) => {
 
     const [stks, setStks] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -13,23 +13,35 @@ const ItemListContainer = () => {
     const getStickers = new Promise((resolve, reject) => {
 
         setTimeout(() => {
-    
-            resolve(stickers);
 
-            reject('Ocurrió un error!');
-    
-        }, 3000);
-        
+            if(ctg){
+                let filterCtg = stickers.filter(s => s.categoria == ctg);
+                resolve(filterCtg);
+                reject('Ocurrió un error!');
+            } else{
+                resolve(stickers);
+                reject('Ocurrió un error!');
+            }
+                
+        }, 2000);
+
     });
 
-    getStickers
-        .then(response => {
+    const getStickersDB = async () => {
+        try {
+            const response = await getStickers;
             setStks(response);
             setLoading(false);
-        })
-        .catch(error => {
+
+        } catch (error) {
             alert(error);
-        });
+        }
+    }
+
+    useEffect(() => {
+        setLoading(true);
+        getStickersDB();
+    }, [ctg]);
 
     return (
         <div className="row justify-content-center align-items-center">
@@ -41,11 +53,11 @@ const ItemListContainer = () => {
                     color="#000000"
                     height={90}
                     width={90}
-                    timeout={3000}
+                    timeout={2000}
                     />
                 </div>
                 :
-                stks.map(s => <Item key={s.id} sticker={s.sticker} nombre={s.nombre} precio={s.precio}/>)
+                stks.map(s => <ItemList key={s.id} stk={s}/>)
             }
         </div>
     );

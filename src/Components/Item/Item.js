@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const Item = ({sticker, nombre, precio}) => {
+const Item = ({ id, sticker, nombre, precio }) => {
 
     return (
         <div className="card col-4 m-2">
@@ -8,7 +9,8 @@ const Item = ({sticker, nombre, precio}) => {
             <div className="card-body">
                 <h5 className="card-title">{nombre}</h5>
                 <p className="card-text">${precio}</p>
-                <button className="btn btn-primary">Detalles</button>
+
+                <Link to={`/detalles/${id}`}> <button className="btn btn-primary">Detalles</button> </Link>
             </div>
         </div>
     );

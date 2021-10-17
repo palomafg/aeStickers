@@ -1,17 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
 
 import ItemDetail from '../ItemDetail/ItemDetail';
-import stickers from '../../data/stickers.json';
+import { stickers } from '../../data/StickerList.js';
 
-const ItemDetailContainer = () => {
+const ItemDetailContainer = ({ id }) => {
 
-    const [stks, setStks] = useState([]);
+    const [stk, setStk] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    const itemSelect = stickers.find(i => i.id == id );
 
     const getStickers = new Promise((resolve, reject) => {
 
         setTimeout(() => {
-    
-            resolve(stickers);
+
+            resolve(itemSelect);
 
             reject('Ocurrió un error!');
     
@@ -19,19 +24,37 @@ const ItemDetailContainer = () => {
         
     });
 
-    getStickers
-        .then(response => {
-            setStks(response);
-        })
-        .catch(error => {
-            alert(error);
-        });
+    const getStickersDB = async () => {
+        try {
+            const response = await getStickers;
+            setStk(response);
+            setLoading(false);
+            
+        } catch (error) {
+            console.log(error);
+        }
+    };
 
-    // No se me ocurre como tengo que hacer para pasarle cual es el item que tiene que mostrar los detalles
+    useEffect(() => {
+        getStickersDB();
+    },[stk]);
 
     return (
         <div>
-            <ItemDetail item={}/>
+            {
+            loading ?
+                <div className="cargando col-4">
+                    <Loader
+                    type="Rings"
+                    color="#000000"
+                    height={130}
+                    width={130}
+                    timeout={3000}
+                    />
+                </div>
+                :
+                <ItemDetail stk={stk}/>
+            }
         </div>
     )
 }
