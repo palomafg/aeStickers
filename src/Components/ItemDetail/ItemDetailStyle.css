@@ -1,0 +1,15 @@
+.goHome{
+    height: auto;
+    font-size: 1.9rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.goHome a{
+    text-decoration: none;
+    color: black;
+}
+.goHome a:hover{
+    color: darkgray;
+}

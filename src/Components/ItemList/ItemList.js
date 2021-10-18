@@ -3,7 +3,7 @@ import Item from '../Item/Item';
 
 const ItemList = ({ stk }) => {
 
-    const {id, sticker, nombre, precio, categoria, descripcion, ejemplo} = stk;
+    const {id, sticker, nombre, precio} = stk;
 
     return (
         <Item id={id} sticker={sticker} nombre={nombre} precio={precio} />

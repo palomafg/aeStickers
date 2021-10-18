@@ -1,6 +1,7 @@
 export const stickers = [
     {
         id: 1,
+        stock: 9,
         sticker: "https://res.cloudinary.com/dd2nenune/image/upload/v1634400438/aeStickers/OjoD70sBYN_pfthct.png",
         nombre: "Ojo 70s ByN (D)",
         precio: 78,
@@ -10,6 +11,7 @@ export const stickers = [
     },
     {
         id: 2,
+        stock: 8,
         sticker: "https://res.cloudinary.com/dd2nenune/image/upload/v1634400438/aeStickers/OjoI70sBYN_aqc52d.png",
         nombre: "Ojo 70s ByN (I)",
         precio: 78,
@@ -19,6 +21,7 @@ export const stickers = [
     },
     {
         id: 3,
+        stock: 7,
         sticker: "https://res.cloudinary.com/dd2nenune/image/upload/v1634400437/aeStickers/Naricita_zlutzb.png",
         nombre: "Naricita",
         precio: 56,
@@ -28,6 +31,7 @@ export const stickers = [
     },
     {
         id: 4,
+        stock: 6,
         sticker: "https://res.cloudinary.com/dd2nenune/image/upload/v1634400438/aeStickers/OjoIMeikap_zwfcqc.png",
         nombre: "Ojo Meikap (I)",
         precio: 67,
@@ -37,6 +41,7 @@ export const stickers = [
     },
     {
         id: 5,
+        stock: 5,
         sticker: "https://res.cloudinary.com/dd2nenune/image/upload/v1634400437/aeStickers/BocaVainilla_cqurlj.png",
         nombre: "Boca Vainilla",
         precio: 45,
@@ -46,6 +51,7 @@ export const stickers = [
     },
     {
         id: 6,
+        stock: 4,
         sticker: "https://res.cloudinary.com/dd2nenune/image/upload/v1634400438/aeStickers/BocaGlam_k3gf1b.png",
         nombre: "Boca Glam",
         precio: 65,

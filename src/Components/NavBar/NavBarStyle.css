@@ -9,8 +9,21 @@
 
 .nav__item{
     height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-size: 1.9rem;
     text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.nav__item:hover{
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.nav__item a{
     text-decoration: none;
     color: black;
 }

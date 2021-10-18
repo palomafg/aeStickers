@@ -15,7 +15,7 @@ const ItemListContainer = ( { ctg } ) => {
         setTimeout(() => {
 
             if(ctg){
-                let filterCtg = stickers.filter(s => s.categoria == ctg);
+                let filterCtg = stickers.filter(s => s.categoria === ctg);
                 resolve(filterCtg);
                 reject('Ocurrió un error!');
             } else{
