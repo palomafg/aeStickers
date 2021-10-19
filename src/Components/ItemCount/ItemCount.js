@@ -1,8 +1,12 @@
-import { React, useState } from 'react'
+import { React, useState } from 'react';
+import { Link } from 'react-router-dom';
+
+import { MdAddShoppingCart } from 'react-icons/md';
 
 const ItemCount = ({onBuy, initial, stock}) => {
 
     const [qty,setQty] = useState(initial);
+    const [endBuy, setEndBuy] = useState(false);
 
     const rmvItem = () => {
         if(qty > initial){
@@ -18,9 +22,10 @@ const ItemCount = ({onBuy, initial, stock}) => {
 
     const comprar = () => {
         if(qty <= stock){
-            alert(`Te llevas ${qty} items!`);
+            // alert(`Te llevas ${qty} items!`);
             onBuy(qty);
             setQty(initial);
+            setEndBuy(true);
 
         } else{
             alert("Lo sentimos, ya no quedan más :(");
@@ -35,10 +40,20 @@ const ItemCount = ({onBuy, initial, stock}) => {
                 <p className="m-2"> {qty} </p>
                 <button className="m-2" onClick={() => addItem()}> + </button>
             </div>
-            
-            <div className="d-flex justify-content-center">
-                <button onClick={comprar}>Comprar</button>
-            </div>
+
+            {
+            endBuy ?
+                <div className="d-flex justify-content-evenly">
+                    <button onClick={comprar}> <MdAddShoppingCart/> </button>
+                    <Link to="/carrito" className="text-decoration-none">
+                        <button> Finalizar compra </button>
+                    </Link>
+                </div>
+                :
+                <div className="d-flex justify-content-center">
+                    <button onClick={comprar}> <MdAddShoppingCart/> </button>
+                </div>
+            }
         </>
     )
 }

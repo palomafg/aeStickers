@@ -5,6 +5,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import Stickers from './Pages/Stickers';
 import Detalles from './Pages/Detalles';
 import Categorias from './Pages/Categorias';
+import Carrito from './Pages/Carrito';
 
 function App() {
 
@@ -19,6 +20,10 @@ function App() {
 
         <Route exact path="/categoria/:ctg">
           <Categorias/>
+        </Route>
+
+        <Route exact path="/carrito">
+          <Carrito/>
         </Route>
 
         <Route exact path="/">
