@@ -42,7 +42,11 @@ const NavBar = () => {
                         </Link>
                     </div>
 
-                    <CartWidget/>
+                    <button id="cart" className="nav__item btn col-1 my-2 p-1">
+                        <Link to="/carrito">
+                            <CartWidget/>
+                        </Link>
+                    </button>
                     
                 </div>
             </div>
