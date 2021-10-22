@@ -3,21 +3,26 @@ import { Link } from 'react-router-dom';
 import { AiOutlineRollback } from 'react-icons/ai';
 
 import ItemCount from '../ItemCount/ItemCount';
+import { CartContextUse } from '../../Contexts/CartContext';
 import './ItemDetailStyle.css';
 
 const ItemDetail = ({ stk }) => {
 
     const {sticker, stock, nombre, precio, categoria, descripcion, ejemplo} = stk;
+    const { addItem } = CartContextUse();
 
     const [itemStock, setItemStock] = useState(stock);
 
     const onBuy = (qtyBuy) => {
-        if(qtyBuy <= itemStock){
-            let newStock = itemStock - qtyBuy;
-            setItemStock(newStock);
-        } else{
-            console.log("Ocurrió un error!");
-        }
+
+        addItem(stk, qtyBuy);
+        
+        // if(qtyBuy <= itemStock){
+        //     let newStock = itemStock - qtyBuy;
+        //     setItemStock(newStock);
+        // } else{
+        //     console.log("Ocurrió un error!");
+        // }
     };
 
     return (

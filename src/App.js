@@ -6,31 +6,34 @@ import Stickers from './Pages/Stickers';
 import Detalles from './Pages/Detalles';
 import Categorias from './Pages/Categorias';
 import Carrito from './Pages/Carrito';
+import { CartContextProvider } from './Contexts/CartContext';
 
 function App() {
 
   return (
     <BrowserRouter>
-      <NavBar/>
-      <Switch>
+      <CartContextProvider>
+        <NavBar/>
+        <Switch>
 
-        <Route exact path="/detalles/:id">
-          <Detalles/>
-        </Route>
+          <Route exact path="/detalles/:id">
+            <Detalles/>
+          </Route>
 
-        <Route exact path="/categoria/:ctg">
-          <Categorias/>
-        </Route>
+          <Route exact path="/categoria/:ctg">
+            <Categorias/>
+          </Route>
 
-        <Route exact path="/carrito">
-          <Carrito/>
-        </Route>
+          <Route exact path="/carrito">
+            <Carrito/>
+          </Route>
 
-        <Route exact path="/">
-          <Stickers/>
-        </Route>
+          <Route exact path="/">
+            <Stickers/>
+          </Route>
 
-      </Switch>
+        </Switch>
+      </CartContextProvider>
     </BrowserRouter>
   );
 
