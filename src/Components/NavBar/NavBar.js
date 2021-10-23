@@ -9,6 +9,7 @@ import { GiNoseFront, GiLips } from 'react-icons/gi';
 import CartWidget from '../Cart/CartWidget';
 
 const NavBar = () => {
+    
     return (
         <>
             <div className="navBar row justify-content-center">
@@ -42,11 +43,11 @@ const NavBar = () => {
                         </Link>
                     </div>
 
-                    <button id="cart" className="nav__item btn col-1 my-2 p-1">
+                    <div id="cart" className="nav__item btn col-1 my-2 p-1">
                         <Link to="/carrito">
                             <CartWidget/>
                         </Link>
-                    </button>
+                    </div>
                     
                 </div>
             </div>
