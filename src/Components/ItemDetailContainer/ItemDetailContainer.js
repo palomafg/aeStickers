@@ -6,11 +6,11 @@ import ItemDetail from '../ItemDetail/ItemDetail';
 import { stickers } from '../../data/StickerList.js';
 
 const ItemDetailContainer = ({ id }) => {
-
+    
     const [stk, setStk] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    const itemSelect = stickers.find(i => i.id == id );
+    const itemSelect = stickers.find(i => i.id === id );
 
     const getStickers = new Promise((resolve, reject) => {
 
@@ -37,7 +37,7 @@ const ItemDetailContainer = ({ id }) => {
 
     useEffect(() => {
         getStickersDB();
-    },[stk]);
+    },[]);
 
     return (
         <div>

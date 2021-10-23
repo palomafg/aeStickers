@@ -17,22 +17,30 @@ export const CartContextProvider = ({ children }) => {
             const updateCant = [...cart];
 
             updateCant.map(e => {
-                if(e.sticker.id == sticker.id){
+                if(e.sticker.id === sticker.id){
                     e.cantidad += cantidad;
-                    console.log('carrito',cart)
                 }
             });
+
+            setCart(updateCant);
 
         } else {
             setCart([...cart, {sticker, cantidad}]);
         }
     }
 
-    const isInCart = (id) => cart.find(e => e.sticker.id == id)
+    const isInCart = (id) => cart.find(e => e.sticker.id === id)
+
+    const clear = () => setCart([]);
+
+    const removeSticker = (id) => {
+        const cartFilter = cart.filter(e => e.sticker.id !== id);
+        setCart(cartFilter);
+    }
 
     console.log('carrito',cart)
     return(
-        <CartContext.Provider value={{cart, addItem}}>
+        <CartContext.Provider value={{cart, addItem, clear, removeSticker}}>
             {children}
         </CartContext.Provider>
     );

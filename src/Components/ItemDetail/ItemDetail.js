@@ -14,15 +14,15 @@ const ItemDetail = ({ stk }) => {
     const [itemStock, setItemStock] = useState(stock);
 
     const onBuy = (qtyBuy) => {
-
-        addItem(stk, qtyBuy);
         
-        // if(qtyBuy <= itemStock){
-        //     let newStock = itemStock - qtyBuy;
-        //     setItemStock(newStock);
-        // } else{
-        //     console.log("Ocurrió un error!");
-        // }
+        if(qtyBuy <= itemStock){
+            let newStock = itemStock - qtyBuy;
+            setItemStock(newStock);
+            addItem(stk, qtyBuy);
+
+        } else{
+            console.log("Ocurrió un error!");
+        }
     };
 
     return (
