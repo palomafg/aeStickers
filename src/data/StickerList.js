@@ -22,7 +22,7 @@ export const stickers = [
     {
         id: "3",
         stock: 7,
-        sticker: "https://res.cloudinary.com/dd2nenune/image/upload/v1634400437/aeStickers/Naricita_zlutzb.png",
+        sticker: "https://res.cloudinary.com/dd2nenune/image/upload/v1635106080/aeStickers/Naricita_q7y0mf.png",
         nombre: "Naricita",
         precio: 56,
         categoria: "narices",

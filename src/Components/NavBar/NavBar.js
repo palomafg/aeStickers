@@ -21,29 +21,29 @@ const NavBar = () => {
                 </div>
 
                 <div className="nav col-12 col-md-10 col-xl-8 row">
-                    <button id="modoClaro" className="nav__item btn col-1 my-2 p-1">
+                    <button id="modoClaro" className="nav__item btn col-1 my-1 p-1">
                         <FiSun/>
                     </button>
 
-                    <div className="nav__item col-1 m-2 p-1">
+                    <div className="nav__item col-1 m-1 p-1">
                         <Link to="/categoria/ojos">
                             <ImEye/>
                         </Link>
                     </div>
 
-                    <div className="nav__item col-1 m-2 p-1">
+                    <div className="nav__item col-1 m-1 p-1">
                         <Link to="/categoria/narices">
                             <GiNoseFront/>
                         </Link>
                     </div>
 
-                    <div className="nav__item col-1 m-2 p-1">
+                    <div className="nav__item col-1 m-1 p-1">
                         <Link to="/categoria/bocas">
                             <GiLips/>
                         </Link>
                     </div>
 
-                    <div id="cart" className="nav__item btn col-1 my-2 p-1">
+                    <div id="cart" className="col-1 px-1">
                         <Link to="/carrito">
                             <CartWidget/>
                         </Link>

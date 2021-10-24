@@ -3,7 +3,9 @@ import ItemListContainer from '../Components/ItemListContainer/ItemListContainer
 
 const Stickers = () => {
     return (
-        <ItemListContainer ctg={false}/> 
+        <div className="row justify-content-center">
+            <ItemListContainer ctg={false}/> 
+        </div>
     )
 }
 
