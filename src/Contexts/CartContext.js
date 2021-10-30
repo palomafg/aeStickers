@@ -38,7 +38,6 @@ export const CartContextProvider = ({ children }) => {
         setCart(cartFilter);
     }
 
-    console.log('carrito',cart)
     return(
         <CartContext.Provider value={{cart, addItem, clear, removeSticker}}>
             {children}

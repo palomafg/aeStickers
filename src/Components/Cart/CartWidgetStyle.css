@@ -2,10 +2,6 @@
     font-family: "Matter-Regular";
     src: url("../../tipografias/Matter-Regular.otf");
 }
-@font-face {
-    font-family: "Matter-Light";
-    src: url("../../tipografias/Matter-Light.otf");
-}
 
 .cartWidget{
     width: 50px;
@@ -22,7 +18,7 @@
     padding-left: 2px;
     padding-top: 19px;
 
-    font-family: "Matter-Light";
+    font-family: "Matter-Regular";
     font-size: 0.7rem;
     color: #000;
 }

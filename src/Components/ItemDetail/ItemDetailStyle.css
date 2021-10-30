@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Matter-HeavyItalic";
+    src: url("../../tipografias/Matter-HeavyItalic.otf");
+}
+@font-face {
+    font-family: "Matter-Light";
+    src: url("../../tipografias/Matter-Light.otf");
+}
+@font-face {
+    font-family: "Matter-SemiBold";
+    src: url("../../tipografias/Matter-SemiBold.otf");
+}
+
 .goHome{
     height: auto;
     font-size: 1.9rem;
@@ -5,11 +18,28 @@
     text-decoration: none;
     color: black;
 }
-
 .goHome a{
     text-decoration: none;
     color: black;
 }
 .goHome a:hover{
     color: darkgray;
+}
+
+.info__nombre{
+    font-family: "Matter-HeavyItalic";
+    font-size: 1.9rem;
+    text-align: start;
+}
+
+.info__desc{
+    font-family: "Matter-Light";
+    font-size: 0.9rem;
+    text-align: start;
+}
+
+.info__precio{
+    font-family: "Matter-SemiBold";
+    font-size: 1.4rem;
+    text-align: end;
 }
