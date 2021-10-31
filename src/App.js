@@ -7,6 +7,7 @@ import Detalles from './Pages/Detalles';
 import Categorias from './Pages/Categorias';
 import Carrito from './Pages/Carrito';
 import { CartContextProvider } from './Contexts/CartContext';
+import Footer from './Components/Footer/Footer';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
           </Route>
 
         </Switch>
+        <Footer/>
       </CartContextProvider>
     </BrowserRouter>
   );

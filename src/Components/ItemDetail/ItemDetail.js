@@ -35,7 +35,7 @@ const ItemDetail = ({ stk }) => {
             <div className="stkDetail col-12 pe-3 row justify-content-evenly align-items-center">
 
                 <div className="stkDetail__img col-5 my-4 mx-2">
-                    <img src={sticker} className="img-fluid" alt={nombre} />
+                    <img src={sticker} className="img-fluid" alt="sticker" />
                 </div>
                 
                 <div className="stkDetail__info col-6 my-4 mx-2">

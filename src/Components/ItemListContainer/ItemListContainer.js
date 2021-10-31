@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 
+import "./ItemListContainerStyle.css";
 // import { stickers } from '../../data/StickerList.js';
 import ItemList from '../ItemList/ItemList.js';
 import { getFirestore } from '../../services/getFirebase.js';
@@ -67,6 +68,8 @@ const ItemListContainer = ( { ctg } ) => {
                     })
                     
                 } else{
+                    //Ordeno por nombre
+                    stickerCollection.orderBy("nombre", "asc");
                     //Traigo los stickers y los guardo en el hook stks
                     stickerCollection.get().then((resp) => {
 
@@ -99,16 +102,16 @@ const ItemListContainer = ( { ctg } ) => {
     }, [ctg]);
 
     return (
-        <div className="col-12 col-xl-11 col-xxl-10 row py-4 justify-content-evenly align-items-center">
+        <div className="col-12 col-xl-11 col-xxl-10 contenedorItemList row py-4 px-0 justify-content-evenly align-items-center">
             {
             loading ?
-                <div className="cargando col-4">
+                <div className="cargando col-12">
                     <Loader
                     type="ThreeDots"
                     color="#000000"
                     height={90}
                     width={90}
-                    timeout={3000}
+                    timeout={4000}
                     />
                 </div>
                 :

@@ -4,6 +4,7 @@ import Loader from "react-loader-spinner";
 import { getFirestore } from '../../services/getFirebase';
 
 import ItemDetail from '../ItemDetail/ItemDetail';
+import './ItemDetailContainerStyle.css';
 // import { stickers } from '../../data/StickerList.js';
 
 const ItemDetailContainer = ({ id }) => {
@@ -75,16 +76,16 @@ const ItemDetailContainer = ({ id }) => {
     },[]);
 
     return (
-        <div>
+        <div className="col-12 col-xl-11 col-xxl-10 contenedorItemDetail py-4 justify-content-evenly align-items-center">
             {
             loading ?
-                <div className="cargando col-4">
+                <div className="cargando">
                     <Loader
                     type="Rings"
                     color="#000000"
                     height={130}
                     width={130}
-                    timeout={3000}
+                    timeout={4000}
                     />
                 </div>
                 :

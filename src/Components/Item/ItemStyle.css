@@ -22,19 +22,19 @@
     font-family: "Matter-Regular";
     text-align: start;
     color: black;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .sticker__precio{
     font-family: "Matter-Medium";
     text-align: end;
     color: black;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .sticker__usar{
-    height: 50px;
-    width: 120px;
+    height: 48px;
+    width: 110px;
 
     border: 2px solid black;
     border-radius: 50% 20% / 10% 40%;
@@ -42,5 +42,10 @@
 
     font-family: "Tenebras";
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+
+    transition: transform 1s;
+}
+.sticker__usar:hover{
+    transform: scale(0.8, 0.8);
 }

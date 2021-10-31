@@ -1,0 +1,11 @@
+.cargando{
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorItemList{
+    min-height: 650px;
+}

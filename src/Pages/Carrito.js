@@ -1,8 +1,8 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import { CartContextUse } from '../Contexts/CartContext';
+import NoItems from '../Components/NoItems/NoItems';
 
 const Carrito = () => {
 
@@ -56,14 +56,7 @@ const Carrito = () => {
                     </div>
                 </div>
                 :
-                <div className="row justify-content-center align-items-center">
-                    <div className="col-12 text-center">
-                        <h4>No hay stickers agregados!</h4>
-                        <Link to="/">
-                            <button>Ir al catálogo</button>
-                        </Link>
-                    </div>
-                </div>
+                <NoItems/>
             }
         </>
     );

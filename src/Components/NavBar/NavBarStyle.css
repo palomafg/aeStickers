@@ -28,6 +28,12 @@
     text-decoration: none;
     color: black;
 }
+.nav__itemSelected{
+    width: 50px;
+    height: 43px;
+    border: 1.8px solid black;
+    border-radius: 50%;
+}
 
 #modoClaro{
     font-size: 1.4rem;
