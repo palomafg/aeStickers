@@ -5,30 +5,14 @@ import { getFirestore } from '../../services/getFirebase';
 
 import ItemDetail from '../ItemDetail/ItemDetail';
 import './ItemDetailContainerStyle.css';
-// import { stickers } from '../../data/StickerList.js';
 
 const ItemDetailContainer = ({ id }) => {
     
     const [stk, setStk] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    // const itemSelect = stickers.find(i => i.id === id );
-
-    // const getStickers = new Promise((resolve, reject) => {
-
-    //     setTimeout(() => {
-
-    //         resolve(itemSelect);
-
-    //         reject('Ocurrió un error!');
-    
-    //     }, 2000);
-        
-    // });
-
     const getStickersDB = async () => {
         try {
-            console.log('El id es:',id,typeof(id))
 
             //Traigo la Data Base
             const db = await getFirestore();
@@ -36,22 +20,18 @@ const ItemDetailContainer = ({ id }) => {
             setTimeout(() => {
 
                 //Consigo el sticker seleccionado de la Data Base
-                const stickerSelect = db.collection('stickers').doc('5JpMd0BFChZ9EzK1PnRY');
-                console.log(stickerSelect)
+                const stickerSelect = db.collection('stickers').doc(id);
 
                 //Traigo el sticker Seleccionado
                 stickerSelect.get()
                 .then((doc) => {
 
-                    console.log(doc)
-
-                    // if(!doc.exists){
-                    //     console.log('No existe sticker con ese id');
-                    //     return
-                    // }
-                    // console.log('Sticker encontrado');
-                    // setStk({ id: doc.id, ...doc.data() });
-                    // console.log(stk)
+                    if(!doc.exists){
+                        console.log('No existe sticker con ese id');
+                        return
+                    }
+                    console.log('Sticker encontrado');
+                    setStk({ id: doc.id, ...doc.data() });
 
                 })
                 .catch((error) => {
