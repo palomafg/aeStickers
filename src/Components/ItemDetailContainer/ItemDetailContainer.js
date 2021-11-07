@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
-import { getFirestore } from '../../services/getFirebase';
 
+import { getFirestore } from '../../services/getFirebase';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import './ItemDetailContainerStyle.css';
 
@@ -30,7 +30,7 @@ const ItemDetailContainer = ({ id }) => {
                         console.log('No existe sticker con ese id');
                         return
                     }
-                    console.log('Sticker encontrado');
+
                     setStk({ id: doc.id, ...doc.data() });
 
                 })
@@ -42,7 +42,7 @@ const ItemDetailContainer = ({ id }) => {
                     setLoading(false);
                 })
 
-            }, 2000);
+            }, 1700);
 
         } catch (error) {
             console.log('Error en la funcion:', error);

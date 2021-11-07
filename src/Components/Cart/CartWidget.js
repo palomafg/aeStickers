@@ -33,7 +33,9 @@ const CartWidget = () => {
     }
 
     useEffect(() => {
+
         actualizarTotalCarrito();
+        
     }, [cart]);
 
     return (

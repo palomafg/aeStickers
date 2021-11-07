@@ -9,32 +9,8 @@ import { getFirestore } from '../../services/getFirebase.js';
 
 const ItemListContainer = ( { ctg } ) => {
 
-    
-
-    // db.collection('items').doc('PIotv081kV9A2rUVEMLW').get(); //item especifico
-
     const [stks, setStks] = useState([]);
     const [loading, setLoading] = useState(true);
-
-    // const getStickers = new Promise((resolve, reject) => {
-
-    //     setTimeout(() => {
-
-    //         if(ctg){
-    //             let filterCtg = stickers.filter(s => s.categoria === ctg);
-    //             resolve(filterCtg);
-    //             reject('Ocurrió un error!');
-    //         } else{
-    //             resolve(stickers);
-    //             reject('Ocurrió un error!');
-    //         }
-                
-    //     }, 2000);
-
-    // });
-    // const response = await getStickers;
-    // setStks(response);
-    // setLoading(false);
 
     const getStickersDB = async () => {
         try {
@@ -87,7 +63,7 @@ const ItemListContainer = ( { ctg } ) => {
                     })
                 }
       
-            }, 2000);
+            }, 1400);
 
         } catch (error) {
             console.log("Error catch:", error);
