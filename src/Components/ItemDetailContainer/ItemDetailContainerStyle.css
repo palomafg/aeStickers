@@ -8,5 +8,12 @@
 }
 
 .contenedorItemDetail{
-    min-height: 650px;
+    /* min-height: 650px; */
+    margin-top: 193px;
+}
+
+@media (min-width: 576px) {
+    .contenedorItemDetail{
+        margin-top: 230px;
+    }
 }

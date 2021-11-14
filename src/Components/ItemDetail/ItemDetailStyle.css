@@ -13,7 +13,7 @@
 
 .goHome{
     height: auto;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     text-align: center;
     text-decoration: none;
     color: black;
@@ -21,14 +21,16 @@
 .goHome a{
     text-decoration: none;
     color: black;
+    transition: transform 1s;
 }
 .goHome a:hover{
     color: darkgray;
+    transform: rotate(360deg);
 }
 
 .info__nombre{
     font-family: "Matter-HeavyItalic";
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     text-align: start;
 }
 
@@ -40,6 +42,6 @@
 
 .info__precio{
     font-family: "Matter-SemiBold";
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: end;
 }

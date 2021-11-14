@@ -4,9 +4,12 @@ import { Form } from 'react-bootstrap';
 import Button from '@restart/ui/esm/Button';
 import firebase from "firebase";
 import 'firebase/firestore';
+import { FiCheckCircle } from 'react-icons/fi';
+import { CgDanger } from 'react-icons/cg';
 
 import { getFirestore } from '../../services/getFirebase';
 import { CartContextUse } from '../../Contexts/CartContext';
+import './BuyFormStyle.css'
 
 const BuyForm = ({ total, setBuying, setOrdenId }) => {
 
@@ -90,55 +93,93 @@ const BuyForm = ({ total, setBuying, setOrdenId }) => {
     }, [nombre, apellido, email, telefono, emailVerif])
 
     return (
-        <Form className="col-10 row" onSubmit={handleSubmit}>
+        <Form className="col-12 row p-1 justify-content-center" onSubmit={handleSubmit}>
 
-            <Form.Group className="col-6 my-3" controlId="formNombre">
-                <Form.Label>Nombre</Form.Label>
-                <Form.Control onChange={e => setNombre(e.target.value)} type="name" placeholder="Nombre" />
+            <Form.Group className="formGroup col-10 my-2" controlId="formNombre">
+                <Form.Label className="formGroup__label">
+                    Nombre
+                    {
+                        nombre !== '' ?
+                            <FiCheckCircle className="text-success ms-2"/>
+                            :
+                            <CgDanger className="text-danger ms-2"/>
+                    }
+                </Form.Label>
+                <Form.Control className="formGroup__control" onChange={e => setNombre(e.target.value)} type="name" placeholder="Nombre" />
             </Form.Group>
 
-            <Form.Group className="col-6 my-3" controlId="formApellido">
-                <Form.Label>Apellido</Form.Label>
-                <Form.Control onChange={e => setApellido(e.target.value)} type="name" placeholder="Apellido" />
+            <Form.Group className="formGroup col-10 my-2" controlId="formApellido">
+                <Form.Label className="formGroup__label">
+                    Apellido
+                    {
+                        apellido !== '' ?
+                            <FiCheckCircle className="text-success ms-2"/>
+                            :
+                            <CgDanger className="text-danger ms-2"/>
+                    }
+                </Form.Label>
+                <Form.Control className="formGroup__control" onChange={e => setApellido(e.target.value)} type="name" placeholder="Apellido" />
             </Form.Group>
 
-            <Form.Group className="col-6 my-3" controlId="formEmail">
-                <Form.Label>Tu email</Form.Label>
-                <Form.Control onChange={e => setEmail(e.target.value)} type="email" placeholder="ejemplo@mail.com" />
+            <Form.Group className="formGroup col-10 my-2" controlId="formEmail">
+                <Form.Label className="formGroup__label">
+                    Tu email
+                    {
+                        email !== '' ?
+                            goodEmail ?
+                                <FiCheckCircle className="text-success ms-2"/>
+                                :
+                                <CgDanger className="text-danger ms-2"/>
+                            :
+                            <></>
+                    }
+                </Form.Label>
+                <Form.Control className="formGroup__control" onChange={e => setEmail(e.target.value)} type="email" placeholder="ejemplo@mail.com" />
             </Form.Group>
 
-            <Form.Group className="col-6 my-3" controlId="formConfirmEmail">
-                <Form.Label>Confirmá tu email</Form.Label>
-                <Form.Control onChange={e => setEmailVerif(e.target.value)} type="email" placeholder="ejemplo@mail.com" />
+            <Form.Group className="formGroup col-10 my-2" controlId="formConfirmEmail">
+                <Form.Label className="formGroup__label">
+                    Confirmá tu email
+                    {
+                        emailVerif !== '' ?
+                            goodEmail ?
+                                <FiCheckCircle className="text-success ms-2"/>
+                                :
+                                <CgDanger className="text-danger ms-2"/>
+                            :
+                            <></>
+                    }
+                </Form.Label>
+                <Form.Control className="formGroup__control" onChange={e => setEmailVerif(e.target.value)} type="email" placeholder="ejemplo@mail.com" />
             </Form.Group>
 
             
-            <div>
-                {
-                    email !== '' && emailVerif !== '' ?
-                        goodEmail ?
-                            <p className="text-success">Estan iguales</p>
-                            :
-                            <p className="text-danger">Estan distintos</p>
-                        :
-                        <p> </p>
-                }
+            <div className="col-10 text-center">
+                
             </div>
 
-            <Form.Group className="col-6 my-3" controlId="formTelefono">
-                <Form.Label>Teléfono</Form.Label>
-                <Form.Control onChange={e => setTelefono(e.target.value)} type="phone" placeholder="+54 9 11 666 345" />
+            <Form.Group className="formGroup col-10 my-2" controlId="formTelefono">
+                <Form.Label className="formGroup__label">
+                    Teléfono
+                    {
+                        telefono !== '' ?
+                            <FiCheckCircle className="text-success ms-2"/>
+                            :
+                            <CgDanger className="text-danger ms-2"/>
+                    }
+                </Form.Label>
+                <Form.Control className="formGroup__control" onChange={e => setTelefono(e.target.value)} type="phone" placeholder="+54 9 11 666 345" />
             </Form.Group>
 
-            <div className="col-12 d-flex justify-content-center">
+            <div className="col-12 my-3 d-flex justify-content-center">
             {
                 goodForm ?
-                    <Button variant="primary" type="submit">
-                        Comprar
+                    <Button className="col-4 my-2 py-1 btnComprar" variant="primary" type="submit">
+                        COMPRAR
                     </Button>
                     :
-                    <Button disabled variant="primary" type="submit">
-                        Comprar
+                    <Button disabled className="col-4 my-2 py-1 btnComprar" variant="primary" type="submit">
+                        COMPRAR
                     </Button>
             }
             </div>

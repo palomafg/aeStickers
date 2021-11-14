@@ -5,14 +5,17 @@ import { CartContextUse } from '../Contexts/CartContext';
 import NoItems from '../Components/NoItems/NoItems';
 import BuyForm from '../Components/BuyForm/BuyForm';
 import BuyComplete from '../Components/BuyComplete/BuyComplete';
+import CarritoCierre from '../Components/CarritoCierre/CarritoCierre';
 
 const Carrito = () => {
 
-    const { clear, removeSticker, cart } = CartContextUse();
+    const [ordenId, setOrdenId] = useState('');
+
+    const { cart } = CartContextUse();
     const [totalPrecio, setTotalPrecio] = useState(0);
+
     const [hayItems, setHayItems] = useState(false);
     const [buying, setBuying] = useState(true);
-    const [ordenId, setOrdenId] = useState('');
 
     const actualizarTotalPrecio = () => {
         let total = 0;
@@ -41,25 +44,9 @@ const Carrito = () => {
             buying?
 
                 hayItems ?
-                    <div className="carrito col-12 row justify-content-center align-items-center">
-                        <button className="col-10" onClick={clear}>Vaciar carrito</button>
-
-                        {cart.map(e => {
-                            const {sticker, nombre, precio, id} = e.sticker;
-                            return(
-                                <div key={id} className="item col-3">
-                                    <button onClick={() => removeSticker(id)} type="button" className="btn-close" aria-label="Remove"></button>
-                                    <img className="img-fluid" src={sticker} alt="sticker"/>
-                                    <h5>{nombre}</h5>
-                                    <h6>${precio}</h6>
-                                    <span>Llevás {e.cantidad}</span>
-                                </div>
-                            )
-                        })}
-
-                        <div className="col-12 text-end">
-                            <h4>Total ${totalPrecio}</h4>
-                        </div>
+                    <div className="col-12 row p-1 justify-content-center align-items-center">
+                        
+                        <CarritoCierre/>
 
                         <BuyForm total={totalPrecio} setBuying={setBuying} setOrdenId={setOrdenId}/>
                     </div>

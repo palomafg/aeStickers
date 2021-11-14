@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Matter-Light";
+    src: '../../tipografias/Matter-Light.otf';
+}
+
+.formGroup{
+    font-family: "Matter-Light";
+}
+.formGroup__label{
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+.formGroup__control{
+    font-size: 0.8rem;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10% 40% / 50% 20%;
+}
+
+.btnComprar{
+    width: 120px;
+    height: 40px;
+    
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10% / 50%;
+
+    font-family: "Matter-RegularItalic";
+    color: white;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+}
+.btnComprar:hover{
+    background-color: white;
+    color: black;
+}
+.btnComprar:disabled{
+    width: 120px;
+    height: 40px;
+    
+    background-color: grey;
+    border: 2px solid grey;
+    border-radius: 10% / 50%;
+
+    font-family: "Matter-RegularItalic";
+    color: white;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+}

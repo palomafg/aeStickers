@@ -13,11 +13,12 @@
 
 .contenedorNoItems{
     min-height: 650px;
+    margin-top: 150px;
 }
 
 .noHay{
     font-family: "Tenebras";
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .verColeccion{

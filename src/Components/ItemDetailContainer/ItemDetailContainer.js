@@ -56,7 +56,7 @@ const ItemDetailContainer = ({ id }) => {
     },[]);
 
     return (
-        <div className="col-12 col-xl-11 col-xxl-10 contenedorItemDetail py-4 justify-content-evenly align-items-center">
+        <div className="col-12 col-xl-11 col-xxl-10 contenedorItemDetail pb-5 pt-sm-5 justify-content-evenly align-items-center">
             {
             loading ?
                 <div className="cargando">
@@ -69,7 +69,7 @@ const ItemDetailContainer = ({ id }) => {
                     />
                 </div>
                 :
-                <div className="row justify-content-center">
+                <div className="row p-0 justify-content-center">
                     <ItemDetail stk={stk}/>
                 </div>
             }

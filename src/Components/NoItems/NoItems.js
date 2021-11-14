@@ -6,13 +6,13 @@ import './NoItemsStyle.css'
 
 const NoItems = () => {
     return (
-        <div className="contenedorNoItems col-12 col-md-10 m-0 px-0 py-5 row justify-content-center align-items-center">
+        <div className="contenedorNoItems col-12 col-md-10 p-0 pb-5 row justify-content-center align-items-start">
 
-            <h4 className="noHay col-12 my-4 text-center">NO HAY STICKERS AGREGADOS</h4>
+            <h4 className="noHay col-12 mt-4 text-center">NO HAY STICKERS AGREGADOS</h4>
             
-            <h6 className="verColeccion col-12 my-3 text-center">Querés ver nuestra colección?</h6>
+            
 
-            <Carousel className="col-6 col-sm-5 col-md-4 col-lg-3 col-xl-2 my-4" fade controls={false} indicators={false}>
+            <Carousel className="col-6 col-sm-5 col-md-4 col-lg-3 col-xl-2 m-0" fade controls={false} indicators={false}>
                 <Carousel.Item interval={1300}>
                     <img
                     className="img-fluid rounded-circle"
@@ -46,7 +46,9 @@ const NoItems = () => {
                 </Carousel.Item>
             </Carousel>
 
-            <div className="col-12 my-4 text-center">
+            <h6 className="verColeccion col-12 m-0 text-center">Querés ver nuestra colección?</h6>
+
+            <div className="col-12 mb-5 text-center">
                 <Link to="/">
                     <button className="irHome__btn">VER STICKERS</button>
                 </Link>

@@ -36,30 +36,25 @@ const ItemCount = ({onBuy, initial, stock}) => {
 
     return (
         <>
-            <div className="counter my-3 d-flex justify-content-center">
-                <button className="counter__btn" onClick={() => rmvItem()}> - </button>
+            <div className="counter col-12 d-flex justify-content-center">
+                <button className="counter__btn pb-1" onClick={() => rmvItem()}> - </button>
                 <p className="counter__qty my-2 mx-4"> {qty} </p>
-                <button className="counter__btn" onClick={() => addItem()}> + </button>
+                <button className="counter__btn pb-1" onClick={() => addItem()}> + </button>
             </div>
 
+            <div className="col-12 row justify-content-center">
+                <button className="btn__cart" onClick={comprar}>
+                    <MdAddShoppingCart/>
+                </button>
             {
             endBuy ?
-                <div className="row justify-content-center">
-                    <button className="btn__cart" onClick={comprar}>
-                        <MdAddShoppingCart/> 
-                    </button>
-
-                    <Link className="my-4 text-decoration-none" to="/carrito">
-                        <button className="ver__cart"> IR AL CARRITO </button>
-                    </Link>
-                </div>
+                <Link className="col-12 mt-3 d-flex justify-content-center text-decoration-none" to="/carrito">
+                    <button className="ver__cart"> IR AL CARRITO </button>
+                </Link>
                 :
-                <div className="d-flex justify-content-center">
-                    <button className="btn__cart" onClick={comprar}>
-                        <MdAddShoppingCart/>
-                    </button>
-                </div>
+                <div></div>
             }
+            </div>
         </>
     )
 }
