@@ -6,9 +6,9 @@ import './NoItemsStyle.css'
 
 const NoItems = () => {
     return (
-        <div className="contenedorNoItems col-12 col-md-10 p-0 pb-5 row justify-content-center align-items-start">
+        <div className="contenedorNoItems col-10 col-sm-8 p-0 pb-5 row justify-content-center align-items-start">
 
-            <h4 className="noHay col-12 mt-4 text-center">NO HAY STICKERS AGREGADOS</h4>
+            <h4 className="noHay col-12 mt-5 text-center">NO HAY STICKERS AGREGADOS</h4>
             
             
 

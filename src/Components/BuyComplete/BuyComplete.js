@@ -42,7 +42,7 @@ const BuyComplete = ({ ordenId }) => {
                 .finally(() => {
                     setLoaded(true);
                 })
-            }, 1000);
+            }, 1500);
 
         } catch (error) {
             console.log('Error en la funcion:', error);
@@ -67,8 +67,8 @@ const BuyComplete = ({ ordenId }) => {
                         <Loader
                         type="TailSpin"
                         color="#000000"
-                        height={130}
-                        width={130}
+                        height={100}
+                        width={100}
                         timeout={5000}
                         />
                     </div>

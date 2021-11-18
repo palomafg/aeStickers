@@ -16,12 +16,8 @@
 }
 
 .carritoCierre{
-    margin-top: 160px;
+    margin-top: 170px;
 }
-
-/* .item{
-    border: 2px solid black;
-} */
 
 .borrarStk{
     width: 100%;
@@ -29,7 +25,6 @@
 
     background-color: transparent;
     border: transparent;
-    /* border: 1px solid black; */
 
     font-family: "Matter-LightItalic";
     font-size: 1.1rem;
@@ -56,7 +51,7 @@
 
 .totalPrecio{
     font-family: "Matter-Medium";
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .vaciarCarrito{
@@ -74,4 +69,25 @@
 .vaciarCarrito:hover{
     background-color: black;
     color: white;
+}
+
+@media (min-width: 576px){
+
+    .carritoCierre{
+        margin-top: 210px;
+    }
+}
+
+@media (min-width: 992px){
+
+    .carritoCierre{
+        margin-top: 250px;
+    }
+}
+
+@media (min-width: 1400px){
+
+    .carritoCierre{
+        margin-top: 350px;
+    }
 }

@@ -7,14 +7,23 @@
     font-family: "Matter-Light";
 }
 .formGroup__label{
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-left: 5px;
 }
 .formGroup__control{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: black;
     border: 2px solid black;
     border-radius: 10% 40% / 50% 20%;
+}
+
+.check{
+    color: green;
+    font-size: 1.1rem;
+}
+.error{
+    color: red;
+    font-size: 1.1rem;
 }
 
 .btnComprar{

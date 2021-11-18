@@ -26,8 +26,8 @@ const ItemDetail = ({ stk }) => {
     };
 
     return (
-        <div className="detalle col-11 col-md-10 row p-0">
-            <div className="goHome col-12 mb-3 row">
+        <div className="detalle col-11 col-md-10 col-xl-8 col-xxl-6 row p-0 py-xxl-5">
+            <div className="goHome col-12 mb-3 p-0 row">
                 <Link to="/" className="col-1 p-0 ms-auto text-decoration-none">
                     <CgClose/>
                 </Link>

@@ -11,7 +11,7 @@ import CartWidget from '../Cart/CartWidget';
 const NavBar = () => {
     
     return (
-        <div className="navBar fixed-top col-12 row m-0 p-0 pe-3 justify-content-center">
+        <div className="navBar fixed-top col-12 row m-0 p-0 px-3 justify-content-center">
             
             <div className="logo col-10 col-md-8 col-xl-6 my-3">
                 <Link to="/">

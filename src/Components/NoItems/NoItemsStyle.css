@@ -13,7 +13,7 @@
 
 .contenedorNoItems{
     min-height: 650px;
-    margin-top: 150px;
+    margin-top: 160px;
 }
 
 .noHay{
@@ -23,7 +23,7 @@
 
 .verColeccion{
     font-family: "Matter-Light";
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .irHome__btn{
@@ -40,4 +40,25 @@
 }
 .irHome__btn:hover{
     transform: scale(0.8, 0.8);
+}
+
+@media (min-width: 576px){
+
+    .contenedorNoItems{
+        margin-top: 200px;
+    }
+}
+
+@media (min-width: 992px){
+
+    .contenedorNoItems{
+        margin-top: 250px;
+    }
+}
+
+@media (min-width: 1400px){
+
+    .contenedorNoItems{
+        margin-top: 300px;
+    }
 }

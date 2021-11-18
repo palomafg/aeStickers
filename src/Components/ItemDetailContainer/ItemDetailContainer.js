@@ -56,7 +56,7 @@ const ItemDetailContainer = ({ id }) => {
     },[]);
 
     return (
-        <div className="col-12 col-xl-11 col-xxl-10 contenedorItemDetail pb-5 pt-sm-5 justify-content-evenly align-items-center">
+        <div className="col-12 col-lg-10 col-xl-8 col-xxl-6 contenedorItemDetail py-5 justify-content-evenly align-items-center">
             {
             loading ?
                 <div className="cargando">

@@ -12,7 +12,7 @@
 }
 
 .logoFooter{
-    width: 90px;
+    width: 100px;
 }
 
 .ayuda{
@@ -36,4 +36,11 @@
     font-size: 12px;
     color: white;
     text-align: end;
+}
+
+@media (min-width: 768px) {
+
+    .logoFooter{
+        width: 120px;
+    }
 }

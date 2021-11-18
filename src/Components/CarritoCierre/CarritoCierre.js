@@ -25,16 +25,16 @@ const CarritoCierre = () => {
     }, [cart]);
 
     return (
-        <div className="carritoCierre col-12 row p-1 justify-content-center">
+        <div className="carritoCierre col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 row p-1 justify-content-center">
 
             <div className="col-12 row p-0 justify-content-start">
-                <button className="col-2 my-2 ms-3 p-1 pb-2 vaciarCarrito" onClick={clear}><CgTrash/></button>
+                <button className="col-2 my-3 ms-3 p-1 pb-2 vaciarCarrito" onClick={clear}><CgTrash/></button>
             </div>
 
             {cart.map(e => {
                 const {sticker, nombre, precio, id} = e.sticker;
                 return(
-                    <div key={id} className="item col-5 row m-2 p-1">
+                    <div key={id} className="item col-5 col-md-3 row m-2 m-md-4 p-1">
                         <div className="col-3 ms-auto p-0">
                             <button onClick={() => removeSticker(id)} type="button" className="borrarStk" aria-label="Remove">X</button>
                         </div>
@@ -52,7 +52,7 @@ const CarritoCierre = () => {
                 )
             })}
 
-            <div className="col-10 text-end">
+            <div className="col-10 my-3 text-end">
                 <h4 className="totalPrecio">Total ${totalPrecio}</h4>
             </div>
         </div>

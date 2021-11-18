@@ -93,43 +93,43 @@ const BuyForm = ({ total, setBuying, setOrdenId }) => {
     }, [nombre, apellido, email, telefono, emailVerif])
 
     return (
-        <Form className="col-12 row p-1 justify-content-center" onSubmit={handleSubmit}>
+        <Form className="col-12 col-sm-11 col-md-10 col-xxl-8 row p-1 justify-content-center" onSubmit={handleSubmit}>
 
-            <Form.Group className="formGroup col-10 my-2" controlId="formNombre">
+            <Form.Group className="formGroup col-10 col-lg-5 col-xxl-4 my-2 my-lg-4 mx-lg-3" controlId="formNombre">
                 <Form.Label className="formGroup__label">
                     Nombre
                     {
                         nombre !== '' ?
-                            <FiCheckCircle className="text-success ms-2"/>
+                            <FiCheckCircle className="check ms-2"/>
                             :
-                            <CgDanger className="text-danger ms-2"/>
+                            <CgDanger className="error ms-2"/>
                     }
                 </Form.Label>
                 <Form.Control className="formGroup__control" onChange={e => setNombre(e.target.value)} type="name" placeholder="Nombre" />
             </Form.Group>
 
-            <Form.Group className="formGroup col-10 my-2" controlId="formApellido">
+            <Form.Group className="formGroup col-10 col-lg-5 col-xxl-4 my-2 my-lg-4 mx-lg-3" controlId="formApellido">
                 <Form.Label className="formGroup__label">
                     Apellido
                     {
                         apellido !== '' ?
-                            <FiCheckCircle className="text-success ms-2"/>
+                            <FiCheckCircle className="check ms-2"/>
                             :
-                            <CgDanger className="text-danger ms-2"/>
+                            <CgDanger className="error ms-2"/>
                     }
                 </Form.Label>
                 <Form.Control className="formGroup__control" onChange={e => setApellido(e.target.value)} type="name" placeholder="Apellido" />
             </Form.Group>
 
-            <Form.Group className="formGroup col-10 my-2" controlId="formEmail">
+            <Form.Group className="formGroup col-10 col-lg-5 col-xxl-4 my-2 my-lg-4 mx-lg-3" controlId="formEmail">
                 <Form.Label className="formGroup__label">
                     Tu email
                     {
                         email !== '' ?
                             goodEmail ?
-                                <FiCheckCircle className="text-success ms-2"/>
+                                <FiCheckCircle className="check ms-2"/>
                                 :
-                                <CgDanger className="text-danger ms-2"/>
+                                <CgDanger className="error ms-2"/>
                             :
                             <></>
                     }
@@ -137,15 +137,15 @@ const BuyForm = ({ total, setBuying, setOrdenId }) => {
                 <Form.Control className="formGroup__control" onChange={e => setEmail(e.target.value)} type="email" placeholder="ejemplo@mail.com" />
             </Form.Group>
 
-            <Form.Group className="formGroup col-10 my-2" controlId="formConfirmEmail">
+            <Form.Group className="formGroup col-10 col-lg-5 col-xxl-4 my-2 my-lg-4 mx-lg-3" controlId="formConfirmEmail">
                 <Form.Label className="formGroup__label">
                     Confirmá tu email
                     {
                         emailVerif !== '' ?
                             goodEmail ?
-                                <FiCheckCircle className="text-success ms-2"/>
+                                <FiCheckCircle className="check ms-2"/>
                                 :
-                                <CgDanger className="text-danger ms-2"/>
+                                <CgDanger className="error ms-2"/>
                             :
                             <></>
                     }
@@ -153,22 +153,17 @@ const BuyForm = ({ total, setBuying, setOrdenId }) => {
                 <Form.Control className="formGroup__control" onChange={e => setEmailVerif(e.target.value)} type="email" placeholder="ejemplo@mail.com" />
             </Form.Group>
 
-            
-            <div className="col-10 text-center">
-                
-            </div>
-
-            <Form.Group className="formGroup col-10 my-2" controlId="formTelefono">
+            <Form.Group className="formGroup col-10 col-lg-5 col-xxl-4 my-2 my-lg-4 mx-lg-3" controlId="formTelefono">
                 <Form.Label className="formGroup__label">
                     Teléfono
                     {
                         telefono !== '' ?
-                            <FiCheckCircle className="text-success ms-2"/>
+                            <FiCheckCircle className="check ms-2"/>
                             :
-                            <CgDanger className="text-danger ms-2"/>
+                            <CgDanger className="error ms-2"/>
                     }
                 </Form.Label>
-                <Form.Control className="formGroup__control" onChange={e => setTelefono(e.target.value)} type="phone" placeholder="+54 9 11 666 345" />
+                <Form.Control className="formGroup__control" onChange={e => setTelefono(e.target.value)} type="phone" placeholder="11 666 345" />
             </Form.Group>
 
             <div className="col-12 my-3 d-flex justify-content-center">
