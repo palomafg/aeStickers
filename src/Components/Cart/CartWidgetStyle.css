@@ -14,11 +14,36 @@
     font-size: 1.8rem;
 }
 
-.cantCart{
+.cantCartTop{
     padding-left: 2px;
     padding-top: 19px;
 
     font-family: "Matter-Regular";
     font-size: 0.7rem;
     color: #000;
+}
+.cantCartMiddle{
+    padding-top: 16px;
+
+    font-family: "Matter-Regular";
+    font-size: 0.7rem;
+    color: #000;
+}
+
+@media (min-width: 576px) {
+
+    .cartWidget{
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .cantCartTop{
+        padding-left: 10px;
+        padding-bottom: 8px;
+        font-size: 0.6rem;
+    }
+    .cantCartMiddle{
+        font-size: 0.5rem;
+    }
 }

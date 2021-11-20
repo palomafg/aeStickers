@@ -49,9 +49,9 @@ const CartWidget = () => {
                 }
                 <div 
                 className={`${cerrarCompra ?
-                'cantCart position-absolute translate-middle top-50 start-50'
+                'cantCartMiddle position-absolute translate-middle top-50 start-50'
                 :
-                'cantCart position-absolute translate-middle top-0 start-100 pt-4 pe-4'}`}>
+                'cantCartTop position-absolute translate-middle top-0 start-100 pt-4 pe-4'}`}>
                     {
                         cantCart ?
                         <span>{cantCart}</span>

@@ -18,3 +18,10 @@
         margin-top: 235px;
     }
 }
+
+@media (min-width: 1400px) {
+
+    .contenedorItemList{
+        margin-top: 150px;
+    }
+}
