@@ -37,6 +37,7 @@
 
 #modoClaro{
     font-size: 1.4rem;
+    text-decoration: none;
     text-align: center;
     margin-left: 1rem;
     margin-right: auto;
@@ -44,9 +45,14 @@
 
 #cart{
     font-size: 1.4rem;
+    text-decoration: none;
     text-align: center;
     margin-left: auto;
     margin-right: 1rem;
+}
+#cart a{
+    text-decoration: none;
+    color: black;
 }
 
 @media (min-width: 576px) {
