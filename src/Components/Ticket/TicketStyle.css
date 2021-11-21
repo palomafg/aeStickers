@@ -12,6 +12,8 @@
 }
 
 .ticket{
+    border-top: 0px;
+    border-bottom: 0px;
     border-left: 1px solid black;
     border-right: 1px solid black;
     border-radius: 2%;

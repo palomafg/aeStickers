@@ -3,9 +3,12 @@ import { IoMdCart } from 'react-icons/io';
 import { BiShoppingBag } from 'react-icons/bi';
 
 import { CartContextUse } from '../../Contexts/CartContext';
+import { DarkContextUse } from '../../Contexts/DarkContext';
 import './CartWidgetStyle.css';
 
 const CartWidget = () => {
+
+    const { dark } = DarkContextUse();
 
     const { cart } = CartContextUse();
     const [cantCart, setCantCart] = useState(0);
@@ -39,7 +42,9 @@ const CartWidget = () => {
     }, [cart]);
 
     return (
-            <button onMouseEnter={hoverCarrito} onMouseLeave={hoverCarrito} className="position-relative cartWidget">
+            <button onMouseEnter={hoverCarrito}
+                    onMouseLeave={hoverCarrito}
+                    className={`${dark? 'dark' : 'light'} cartWidget position-relative`}>
                 
                 {
                 cerrarCompra ?

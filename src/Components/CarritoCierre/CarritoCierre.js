@@ -36,7 +36,7 @@ const CarritoCierre = () => {
                 return(
                     <div key={id} className="item col-5 col-md-3 row m-2 m-md-4 p-1">
                         <div className="col-3 ms-auto p-0">
-                            <button onClick={() => removeSticker(id)} type="button" className="borrarStk" aria-label="Remove">X</button>
+                            <button onClick={() => removeSticker(id)} type="button" className="borrarStk" aria-label="Remove" style={{ textDecoration: 'none' }}>X</button>
                         </div>
                         
                         <div className="col-12 my-2">

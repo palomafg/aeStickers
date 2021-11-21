@@ -7,6 +7,7 @@ import Detalles from './Pages/Detalles';
 import Categorias from './Pages/Categorias';
 import Carrito from './Pages/Carrito';
 import { CartContextProvider } from './Contexts/CartContext';
+import { DarkContextProvider } from './Contexts/DarkContext';
 import Footer from './Components/Footer/Footer';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   return (
     <BrowserRouter>
       <CartContextProvider>
+      <DarkContextProvider>
         <NavBar/>
         <Switch>
 
@@ -35,6 +37,7 @@ function App() {
 
         </Switch>
         <Footer/>
+      </DarkContextProvider>
       </CartContextProvider>
     </BrowserRouter>
   );
