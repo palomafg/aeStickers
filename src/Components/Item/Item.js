@@ -11,7 +11,7 @@ const Item = ({ id, sticker, nombre, precio }) => {
             <img src={sticker} alt="sticker" className="col-12 sticker__img img-fluid p-2 my-1"/>
             <p className="col-12 sticker__precio my-2">${precio}</p>
             <h5 className="col-12 sticker__nombre my-3">{nombre}</h5>
-            <Link className="col-9 col-sm-6 col-md-5 col-lg-6 col-xl-5 col-xxl-8 my-2 my-md-3 my-xl-4 p-0 text-decoration-none" to={`/detalles/${id}`}>
+            <Link className="col-9 col-sm-6 col-md-5 col-lg-6 col-xl-5 col-xxl-8 my-2 my-md-3 my-xl-4 p-0 text-decoration-none" to={`/aeStickers/detalles/${id}`}>
                 <button className="sticker__usar">USAR <HiOutlineDownload/> </button>
             </Link>
         </div>

@@ -49,7 +49,7 @@ const NoItems = () => {
             <h6 className="verColeccion col-12 m-0 text-center">Querés ver nuestra colección?</h6>
 
             <div className="col-12 mb-5 text-center">
-                <Link to="/">
+                <Link to="/aeStickers/">
                     <button className="irHome__btn">VER STICKERS</button>
                 </Link>
             </div>

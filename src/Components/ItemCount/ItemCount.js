@@ -48,7 +48,7 @@ const ItemCount = ({onBuy, initial, stock}) => {
                 </button>
             {
             endBuy ?
-                <Link className="col-12 mt-3 d-flex justify-content-center text-decoration-none" to="/carrito">
+                <Link className="col-12 mt-3 d-flex justify-content-center text-decoration-none" to="/aeStickers/carrito">
                     <button className="ver__cart"> IR AL CARRITO </button>
                 </Link>
                 :

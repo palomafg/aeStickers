@@ -19,7 +19,7 @@ const Ticket = ({ compra, ordenId }) => {
             </div>
 
             <div className="col-12 mt-4 row">
-                <Link to="/" className="cerrar col-1 p-0 ms-auto text-decoration-none">
+                <Link to="/aeStickers/" className="cerrar col-1 p-0 ms-auto text-decoration-none">
                     <CgClose/>
                 </Link>
             </div>

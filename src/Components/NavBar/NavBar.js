@@ -14,7 +14,7 @@ const NavBar = () => {
         <div className="navBar fixed-top col-12 row m-0 p-0 px-3 justify-content-center">
             
             <div className="logo col-10 col-sm-8 col-md-6 col-lg-5 col-xxl-4 my-3">
-                <Link to="/">
+                <Link to="/aeStickers/">
                     <img className="logo__img" src={logoBlack} alt="logo"/>
                 </Link>
             </div>
@@ -25,25 +25,25 @@ const NavBar = () => {
                 </button>
 
                 <div className="nav__item col-1 m-1 p-1">
-                    <NavLink to="/categoria/ojos" activeClassName="nav__itemSelected">
+                    <NavLink to="/aeStickers/categoria/ojos" activeClassName="nav__itemSelected">
                         <ImEye/>
                     </NavLink>
                 </div>
 
                 <div className="nav__item col-1 m-1 p-1">
-                    <NavLink to="/categoria/narices" activeClassName="nav__itemSelected">
+                    <NavLink to="/aeStickers/categoria/narices" activeClassName="nav__itemSelected">
                         <GiNoseFront/>
                     </NavLink>
                 </div>
 
                 <div className="nav__item col-1 m-1 p-1">
-                    <NavLink to="/categoria/bocas" activeClassName="nav__itemSelected">
+                    <NavLink to="/aeStickers/categoria/bocas" activeClassName="nav__itemSelected">
                         <GiLips/>
                     </NavLink>
                 </div>
 
                 <div id="cart" className="col-1 px-1">
-                    <Link to="/carrito">
+                    <Link to="/aeStickers/carrito">
                         <CartWidget/>
                     </Link>
                 </div>
