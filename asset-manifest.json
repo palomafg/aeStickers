@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/aeStickers/static/css/main.4cf5d9bd.chunk.css",
-    "main.js": "/aeStickers/static/js/main.37ec0f4c.chunk.js",
-    "main.js.map": "/aeStickers/static/js/main.37ec0f4c.chunk.js.map",
+    "main.js": "/aeStickers/static/js/main.da7c834d.chunk.js",
+    "main.js.map": "/aeStickers/static/js/main.da7c834d.chunk.js.map",
     "runtime-main.js": "/aeStickers/static/js/runtime-main.bba373f7.js",
     "runtime-main.js.map": "/aeStickers/static/js/runtime-main.bba373f7.js.map",
     "static/css/2.98985107.chunk.css": "/aeStickers/static/css/2.98985107.chunk.css",
@@ -28,6 +28,6 @@
     "static/css/2.98985107.chunk.css",
     "static/js/2.28b44b8a.chunk.js",
     "static/css/main.4cf5d9bd.chunk.css",
-    "static/js/main.37ec0f4c.chunk.js"
+    "static/js/main.da7c834d.chunk.js"
   ]
 }
