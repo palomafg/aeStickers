@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/aeStickers/static/css/main.4cf5d9bd.chunk.css",
+    "main.css": "/aeStickers/static/css/main.40f37e8c.chunk.css",
     "main.js": "/aeStickers/static/js/main.da7c834d.chunk.js",
     "main.js.map": "/aeStickers/static/js/main.da7c834d.chunk.js.map",
     "runtime-main.js": "/aeStickers/static/js/runtime-main.bba373f7.js",
@@ -10,7 +10,7 @@
     "static/js/2.28b44b8a.chunk.js.map": "/aeStickers/static/js/2.28b44b8a.chunk.js.map",
     "index.html": "/aeStickers/index.html",
     "static/css/2.98985107.chunk.css.map": "/aeStickers/static/css/2.98985107.chunk.css.map",
-    "static/css/main.4cf5d9bd.chunk.css.map": "/aeStickers/static/css/main.4cf5d9bd.chunk.css.map",
+    "static/css/main.40f37e8c.chunk.css.map": "/aeStickers/static/css/main.40f37e8c.chunk.css.map",
     "static/js/2.28b44b8a.chunk.js.LICENSE.txt": "/aeStickers/static/js/2.28b44b8a.chunk.js.LICENSE.txt",
     "static/media/NoItemsStyle.css": "/aeStickers/static/media/Tenebras.163bd4bf.otf",
     "static/media/ItemDetailStyle.css": "/aeStickers/static/media/Matter-HeavyItalic.cc23e57c.otf",
@@ -27,7 +27,7 @@
     "static/js/runtime-main.bba373f7.js",
     "static/css/2.98985107.chunk.css",
     "static/js/2.28b44b8a.chunk.js",
-    "static/css/main.4cf5d9bd.chunk.css",
+    "static/css/main.40f37e8c.chunk.css",
     "static/js/main.da7c834d.chunk.js"
   ]
 }
