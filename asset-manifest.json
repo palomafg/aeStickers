@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/palomafg/aeStickers/static/css/main.f678afdc.chunk.css",
+    "main.js": "/palomafg/aeStickers/static/js/main.6137f3ef.chunk.js",
+    "main.js.map": "/palomafg/aeStickers/static/js/main.6137f3ef.chunk.js.map",
+    "runtime-main.js": "/palomafg/aeStickers/static/js/runtime-main.08e49bbe.js",
+    "runtime-main.js.map": "/palomafg/aeStickers/static/js/runtime-main.08e49bbe.js.map",
+    "static/css/2.98985107.chunk.css": "/palomafg/aeStickers/static/css/2.98985107.chunk.css",
+    "static/js/2.89c3cd24.chunk.js": "/palomafg/aeStickers/static/js/2.89c3cd24.chunk.js",
+    "static/js/2.89c3cd24.chunk.js.map": "/palomafg/aeStickers/static/js/2.89c3cd24.chunk.js.map",
+    "index.html": "/palomafg/aeStickers/index.html",
+    "static/css/2.98985107.chunk.css.map": "/palomafg/aeStickers/static/css/2.98985107.chunk.css.map",
+    "static/css/main.f678afdc.chunk.css.map": "/palomafg/aeStickers/static/css/main.f678afdc.chunk.css.map",
+    "static/js/2.89c3cd24.chunk.js.LICENSE.txt": "/palomafg/aeStickers/static/js/2.89c3cd24.chunk.js.LICENSE.txt",
+    "static/media/NoItemsStyle.css": "/palomafg/aeStickers/static/media/Tenebras.163bd4bf.otf",
+    "static/media/ItemDetailStyle.css": "/palomafg/aeStickers/static/media/Matter-HeavyItalic.cc23e57c.otf",
+    "static/media/FooterStyle.css": "/palomafg/aeStickers/static/media/Matter-Regular.6bda6f04.otf",
+    "static/media/CarritoCierreStyle.css": "/palomafg/aeStickers/static/media/Matter-MediumItalic.9daeac8f.otf",
+    "static/media/ItemCountStyle.css": "/palomafg/aeStickers/static/media/Matter-RegularItalic.0fc59b48.otf",
+    "static/media/TicketStyle.css": "/palomafg/aeStickers/static/media/Matter-SemiBold.616eddda.otf",
+    "static/media/logoBlack.c82f2db7.svg": "/palomafg/aeStickers/static/media/logoBlack.c82f2db7.svg",
+    "static/media/logoMin__white.6dacb62a.svg": "/palomafg/aeStickers/static/media/logoMin__white.6dacb62a.svg",
+    "static/media/ticketBottom.9d34ffdb.svg": "/palomafg/aeStickers/static/media/ticketBottom.9d34ffdb.svg",
+    "static/media/ticketTop.a37c1f9b.svg": "/palomafg/aeStickers/static/media/ticketTop.a37c1f9b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.08e49bbe.js",
+    "static/css/2.98985107.chunk.css",
+    "static/js/2.89c3cd24.chunk.js",
+    "static/css/main.f678afdc.chunk.css",
+    "static/js/main.6137f3ef.chunk.js"
+  ]
+}
