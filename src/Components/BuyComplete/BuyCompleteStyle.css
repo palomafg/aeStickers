@@ -1,6 +1,6 @@
 .contenedorBuyComplete{
     min-height: 650px;
-    margin-top: 160px;
+    margin-top: 200px;
 }
 
 .cargando{
@@ -9,4 +9,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 576px) {
+
+    .contenedorBuyComplete{
+        margin-top: 230px;
+    }
 }

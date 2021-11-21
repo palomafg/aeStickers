@@ -13,7 +13,7 @@ const Ticket = ({ compra, ordenId }) => {
     const { buyer, fecha, stickers, totalCompra } = compra;
 
     return (
-        <div className="col-10 ticket row py-3 my-3 position-relative justify-content-center">
+        <div className="col-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4 ticket row py-3 my-3 my-md-5 position-relative justify-content-center">
             <div className="col-12 px-0 position-absolute translate-middle top-0 start-50">
                 <img className="corte" src={ticketTop} alt="ticketTop"/>
             </div>
@@ -24,7 +24,7 @@ const Ticket = ({ compra, ordenId }) => {
                 </Link>
             </div>
 
-            <div className="col-11 my-4">
+            <div className="col-11 col-sm-10 col-lg-8 col-xxl-7 my-4">
                 <img className="img-fluid" src={logoBlack} alt="logo"/>
             </div>
 
