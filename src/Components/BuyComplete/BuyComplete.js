@@ -44,7 +44,7 @@ const BuyComplete = ({ ordenId }) => {
                 .finally(() => {
                     setLoaded(true);
                 })
-            }, 1500);
+            }, 1000);
 
         } catch (error) {
             console.log('Error en la funcion:', error);
@@ -71,7 +71,7 @@ const BuyComplete = ({ ordenId }) => {
                         color={`${dark? 'white' : 'black'}`}
                         height={100}
                         width={100}
-                        timeout={5000}
+                        timeout={50000}
                         />
                     </div>
             }
