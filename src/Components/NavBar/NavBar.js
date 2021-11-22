@@ -18,10 +18,8 @@ const NavBar = () => {
 
         if(dark){
             setDark(false)
-            console.log(dark)
         } else{
             setDark(true)
-            console.log(dark)
         }
     }
     

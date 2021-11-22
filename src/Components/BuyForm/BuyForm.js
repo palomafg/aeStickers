@@ -30,7 +30,6 @@ const BuyForm = ({ total, setBuying, setOrdenId }) => {
     const handleSubmit = (e) => {
 
         e.preventDefault();
-        console.log('Compra realizada!');
         
         putOrdersDB();
     }
@@ -52,17 +51,15 @@ const BuyForm = ({ total, setBuying, setOrdenId }) => {
                 fecha: firebase.firestore.Timestamp.fromDate(new Date()),
                 totalCompra: total
                 }
-            
-            console.log(orden)
 
             //Creo el documento
             ordenes.add(orden)
                         .then(({ id }) => {
 
-                            console.log(id);
                             setOrdenId(id);
                         })
                         .catch(e => console.log('error al crear orden:', e))
+
                         .finally(() => {
                             setBuying(false);
                             clear();
