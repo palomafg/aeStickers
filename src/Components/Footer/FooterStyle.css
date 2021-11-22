@@ -18,31 +18,6 @@
     width: 100px;
 }
 
-.ayuda{
-    display: flex;
-    justify-content: end;
-}
-
-.btnLight{
-    color: white;
-    border-bottom: 1px solid white;
-}
-.btnDark{
-    color: black;
-    border-bottom: 1px solid black;
-}
-
-.ayuda__btn{
-    width: 110px;
-    height: 25px;
-    font-family: "Matter-Light";
-    font-size: 13.5px;
-    background-color: transparent;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-}
-
 .creditos{
     font-family: "Matter-Regular";
     font-size: 12px;

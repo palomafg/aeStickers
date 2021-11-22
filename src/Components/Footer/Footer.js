@@ -17,10 +17,6 @@ const Footer = () => {
                     <img className="logoFooter__img" src={dark? logoMin__black : logoMin__white} alt="logo"/>
                 </div>
 
-                <div className="col-5 col-sm-3 mt-5 ms-auto me-2 ayuda">
-                    <button className={`${dark? 'btnDark' : 'btnLight'} ayuda__btn`}>Cómo usarlos?</button>
-                </div>
-
                 <div className={`${dark? 'credDark' : 'credLight'} creditos col-11 mt-4 mb-5 mb-md-3 ms-auto me-2`}>
                     <p className="creditos__des my-2">Desarrollado x Paloma González</p>
                     <p className="creditos__dis my-2">Diseñado x Ailín Carlés</p>
