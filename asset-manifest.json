@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/aeStickers/static/css/main.2833989d.chunk.css",
-    "main.js": "/aeStickers/static/js/main.1e34b15a.chunk.js",
-    "main.js.map": "/aeStickers/static/js/main.1e34b15a.chunk.js.map",
+    "main.js": "/aeStickers/static/js/main.eec2c23d.chunk.js",
+    "main.js.map": "/aeStickers/static/js/main.eec2c23d.chunk.js.map",
     "runtime-main.js": "/aeStickers/static/js/runtime-main.bba373f7.js",
     "runtime-main.js.map": "/aeStickers/static/js/runtime-main.bba373f7.js.map",
     "static/css/2.98985107.chunk.css": "/aeStickers/static/css/2.98985107.chunk.css",
@@ -30,6 +30,6 @@
     "static/css/2.98985107.chunk.css",
     "static/js/2.0d0411cc.chunk.js",
     "static/css/main.2833989d.chunk.css",
-    "static/js/main.1e34b15a.chunk.js"
+    "static/js/main.eec2c23d.chunk.js"
   ]
 }
