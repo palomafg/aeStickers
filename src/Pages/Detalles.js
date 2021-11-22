@@ -10,7 +10,8 @@ const Detalles = () => {
     const { dark } = DarkContextUse();
 
     return (
-        <div style={ dark? { backgroundColor: 'black' } : { backgroundColor: 'white' }}>
+        <div style={ dark? { backgroundColor: 'black' } : { backgroundColor: 'white' }}
+            className="row p-0 justify-content-center">
             <ItemDetailContainer id={id} />
         </div>
     )

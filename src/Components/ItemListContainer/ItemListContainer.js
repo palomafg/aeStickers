@@ -80,7 +80,7 @@ const ItemListContainer = ( { ctg } ) => {
     }, [ctg]);
 
     return (
-        <div className="col-12 col-xl-11 col-xxl-10 contenedorItemList row py-4 px-0 justify-content-evenly align-items-center">
+        <div className="col-12 col-xl-11 col-xxl-10 contenedorItemList row py-4 px-0 justify-content-center align-items-center">
             {
             loading ?
                 <div className="cargando col-12">
