@@ -3,6 +3,13 @@
     src: '../../tipografias/Matter-Light.otf';
 }
 
+.light{
+    color: black;
+}
+.dark{
+    color: white;
+}
+
 .formGroup{
     font-family: "Matter-Light";
 }
@@ -29,20 +36,12 @@
 .btnComprar{
     width: 120px;
     height: 40px;
-    
-    background-color: black;
-    border: 2px solid black;
     border-radius: 10% / 50%;
 
     font-family: "Matter-RegularItalic";
-    color: white;
     font-size: 1rem;
     line-height: 1rem;
     text-align: center;
-}
-.btnComprar:hover{
-    background-color: white;
-    color: black;
 }
 .btnComprar:disabled{
     width: 120px;
@@ -57,4 +56,23 @@
     font-size: 1rem;
     line-height: 1rem;
     text-align: center;
+}
+
+.comprarLight{
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+}
+.comprarLight:hover{
+    background-color: white;
+    color: black;
+}
+.comprarDark{
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+}
+.comprarDark:hover{
+    background-color: black;
+    color: white;
 }

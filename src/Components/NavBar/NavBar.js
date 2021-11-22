@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import logoBlack from '../../multimedia/logoBlack.svg';
 import logoWhite from '../../multimedia/logoWhite.svg';
 import "./NavBarStyle.css";
-import { FiSun } from 'react-icons/fi';
+import { FiSun, FiMoon } from 'react-icons/fi';
 import { ImEye } from 'react-icons/im';
 import { GiNoseFront, GiLips } from 'react-icons/gi';
 import CartWidget from '../Cart/CartWidget';
@@ -38,7 +38,12 @@ const NavBar = () => {
                 <button id="modoClaro"
                         onClick={cambiarModo}
                         className={`${dark? 'nav__itemDark' : 'nav__itemLight'} btn col-1 my-1 p-1`}>
-                    <FiSun/>
+                    {
+                    dark?
+                        <FiMoon/>
+                        :
+                        <FiSun/>
+                    }
                 </button>
 
                 <div className={`${dark? 'nav__itemDark' : 'nav__itemLight'} col-1 m-1 p-1`}>

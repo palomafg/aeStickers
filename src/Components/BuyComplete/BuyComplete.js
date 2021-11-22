@@ -3,6 +3,7 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from 'react-loader-spinner';
 
 import { getFirestore } from '../../services/getFirebase';
+import { DarkContextUse } from '../../Contexts/DarkContext';
 import Ticket from '../Ticket/Ticket';
 import './BuyCompleteStyle.css'
 
@@ -11,6 +12,7 @@ const BuyComplete = ({ ordenId }) => {
     const [compra, setCompra] = useState([]);
     const [loaded, setLoaded] = useState(false);
 
+    const { dark } = DarkContextUse();
 
     const getOrderDB = async () => {
         try {
@@ -66,7 +68,7 @@ const BuyComplete = ({ ordenId }) => {
                     <div className="cargando">
                         <Loader
                         type="TailSpin"
-                        color="#000000"
+                        color={`${dark? 'white' : 'black'}`}
                         height={100}
                         width={100}
                         timeout={5000}

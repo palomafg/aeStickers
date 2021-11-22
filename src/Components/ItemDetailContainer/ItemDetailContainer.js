@@ -3,10 +3,13 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 
 import { getFirestore } from '../../services/getFirebase';
+import { DarkContextUse } from '../../Contexts/DarkContext';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import './ItemDetailContainerStyle.css';
 
 const ItemDetailContainer = ({ id }) => {
+
+    const { dark } = DarkContextUse();
     
     const [stk, setStk] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -62,7 +65,7 @@ const ItemDetailContainer = ({ id }) => {
                 <div className="cargando">
                     <Loader
                     type="Rings"
-                    color="#000000"
+                    color={`${dark? 'white' : 'black'}`}
                     height={130}
                     width={130}
                     timeout={4000}

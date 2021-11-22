@@ -11,16 +11,27 @@
     src: url("../../tipografias/Matter-SemiBold.otf");
 }
 
+.light{
+    color: black;
+}
+.light a{
+    color: black;
+}
+.dark{
+    color: white;
+}
+.dark a{
+    color: white;
+}
+
 .goHome{
     height: auto;
     font-size: 1.8rem;
     text-align: center;
     text-decoration: none;
-    color: black;
 }
 .goHome a{
     text-decoration: none;
-    color: black;
     transition: transform 1s;
 }
 .goHome a:hover{

@@ -2,13 +2,17 @@ import React from 'react';
 import { useParams } from 'react-router';
 
 import ItemDetailContainer from '../Components/ItemDetailContainer/ItemDetailContainer';
+import { DarkContextUse } from '../Contexts/DarkContext';
 
 const Detalles = () => {
 
     let { id } = useParams();
+    const { dark } = DarkContextUse();
 
     return (
-        <ItemDetailContainer id={id} />
+        <div style={ dark? { backgroundColor: 'black' } : { backgroundColor: 'white' }}>
+            <ItemDetailContainer id={id} />
+        </div>
     )
 }
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 
 import { CartContextUse } from '../Contexts/CartContext';
+import { DarkContextUse } from '../Contexts/DarkContext';
 import NoItems from '../Components/NoItems/NoItems';
 import BuyForm from '../Components/BuyForm/BuyForm';
 import BuyComplete from '../Components/BuyComplete/BuyComplete';
@@ -10,6 +11,8 @@ import CarritoCierre from '../Components/CarritoCierre/CarritoCierre';
 const Carrito = () => {
 
     const [ordenId, setOrdenId] = useState('');
+
+    const { dark } = DarkContextUse();
 
     const { cart } = CartContextUse();
     const [totalPrecio, setTotalPrecio] = useState(0);
@@ -39,7 +42,7 @@ const Carrito = () => {
     }, [cart]);
 
     return (
-        <>
+        <div style={ dark? { backgroundColor: 'black' } : { backgroundColor: 'white' }} className="col-12 row p-0 justify-content-center">
             {
             buying?
 
@@ -60,7 +63,7 @@ const Carrito = () => {
                 <BuyComplete ordenId={ordenId}/>
                    
             }
-        </>
+        </div>
     );
 };
 

@@ -16,12 +16,22 @@
     border-bottom: 0px;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    border-radius: 2%;
+    border-radius: 0%;
+    background-color: white;
 }
 
-.corte{
+.corteTop{
+    top: -1%;
+    left: 50%;
+}
+.corteBottom{
+    top: 101%;
+    left: 50%;
+}
+.corte__svg{
     width: 100%;
-    height: 50px;
+    height: auto;
+    transform: scale(1.004);
 }
 
 .cerrar{

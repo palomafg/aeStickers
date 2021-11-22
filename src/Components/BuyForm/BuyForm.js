@@ -9,9 +9,12 @@ import { CgDanger } from 'react-icons/cg';
 
 import { getFirestore } from '../../services/getFirebase';
 import { CartContextUse } from '../../Contexts/CartContext';
-import './BuyFormStyle.css'
+import { DarkContextUse } from '../../Contexts/DarkContext';
+import './BuyFormStyle.css';
 
 const BuyForm = ({ total, setBuying, setOrdenId }) => {
+
+    const { dark } = DarkContextUse();
 
     const { clear, cart } = CartContextUse();
     const [goodForm, setGoodForm] = useState(false);
@@ -95,8 +98,9 @@ const BuyForm = ({ total, setBuying, setOrdenId }) => {
     return (
         <Form className="col-12 col-sm-11 col-md-10 col-xxl-8 row p-1 justify-content-center" onSubmit={handleSubmit}>
 
-            <Form.Group className="formGroup col-10 col-lg-5 col-xxl-4 my-2 my-lg-4 mx-lg-3" controlId="formNombre">
-                <Form.Label className="formGroup__label">
+            <Form.Group className="formGroup col-10 col-lg-5 col-xxl-4 my-2 my-lg-4 mx-lg-3"
+                        controlId="formNombre">
+                <Form.Label className={`${dark? 'dark' : 'light'} formGroup__label`}>
                     Nombre
                     {
                         nombre !== '' ?
@@ -109,7 +113,7 @@ const BuyForm = ({ total, setBuying, setOrdenId }) => {
             </Form.Group>
 
             <Form.Group className="formGroup col-10 col-lg-5 col-xxl-4 my-2 my-lg-4 mx-lg-3" controlId="formApellido">
-                <Form.Label className="formGroup__label">
+                <Form.Label className={`${dark? 'dark' : 'light'} formGroup__label`}>
                     Apellido
                     {
                         apellido !== '' ?
@@ -122,7 +126,7 @@ const BuyForm = ({ total, setBuying, setOrdenId }) => {
             </Form.Group>
 
             <Form.Group className="formGroup col-10 col-lg-5 col-xxl-4 my-2 my-lg-4 mx-lg-3" controlId="formEmail">
-                <Form.Label className="formGroup__label">
+                <Form.Label className={`${dark? 'dark' : 'light'} formGroup__label`}>
                     Tu email
                     {
                         email !== '' ?
@@ -138,7 +142,7 @@ const BuyForm = ({ total, setBuying, setOrdenId }) => {
             </Form.Group>
 
             <Form.Group className="formGroup col-10 col-lg-5 col-xxl-4 my-2 my-lg-4 mx-lg-3" controlId="formConfirmEmail">
-                <Form.Label className="formGroup__label">
+                <Form.Label className={`${dark? 'dark' : 'light'} formGroup__label`}>
                     Confirmá tu email
                     {
                         emailVerif !== '' ?
@@ -154,7 +158,7 @@ const BuyForm = ({ total, setBuying, setOrdenId }) => {
             </Form.Group>
 
             <Form.Group className="formGroup col-10 col-lg-5 col-xxl-4 my-2 my-lg-4 mx-lg-3" controlId="formTelefono">
-                <Form.Label className="formGroup__label">
+                <Form.Label className={`${dark? 'dark' : 'light'} formGroup__label`}>
                     Teléfono
                     {
                         telefono !== '' ?
@@ -169,7 +173,9 @@ const BuyForm = ({ total, setBuying, setOrdenId }) => {
             <div className="col-12 my-3 d-flex justify-content-center">
             {
                 goodForm ?
-                    <Button className="col-4 my-2 py-1 btnComprar" variant="primary" type="submit">
+                    <Button className={`${dark? 'comprarDark' : 'comprarLight'} col-4 my-2 py-1 btnComprar`}
+                            variant="primary"
+                            type="submit">
                         COMPRAR
                     </Button>
                     :

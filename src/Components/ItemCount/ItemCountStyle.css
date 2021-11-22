@@ -7,6 +7,32 @@
     src: url("../../tipografias/Matter-RegularItalic.otf");
 }
 
+.light{
+    color: black;
+}
+.dark{
+    color: white;
+}
+
+#btnLight{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+#btnLight:hover{
+    background-color: black;
+    color: white;
+}
+#btnDark{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+#btnDark:hover{
+    background-color: white;
+    color: black;
+}
+
 .counter{
     align-items: center;
     font-family: "Matter-SemiBold";
@@ -17,50 +43,66 @@
 .counter__btn{
     width: 36px;
     height: 36px;
-    background-color: white;
-    border: 2px solid black;
     border-radius: 50%;
-    color: black;
     font-size: 24px;
     line-height: 24px;
     text-align: center;
-}
-.counter__btn:hover{
-    background-color: black;
-    color: white;
 }
 
 .btn__cart{
     height: 55px;
     width: 55px;
-    color: black;
-    background-color: transparent;
     border: 2px solid transparent;
     border-radius: 50%;
     font-size: 1.9rem;
     line-height: 1.9rem;
     text-align: center;
 }
-.btn__cart:hover{
+
+.cartLight{
+    color: black;
+    background-color: white;
+}
+.cartLight:hover{
     color: white;
     background-color: black;
+}
+.cartDark{
+    color: white;
+    background-color: black;
+}
+.cartDark:hover{
+    color: black;
+    background-color: white;
 }
 
 .ver__cart{
     width: 150px;
     height: 45px;
     
-    background-color: black;
-    border: 2px solid black;
     border-radius: 10% / 50%;
 
     font-family: "Matter-RegularItalic";
-    color: white;
     font-size: 1rem;
     line-height: 1rem;
     text-align: center;
 }
-.ver__cart:hover{
+
+.verLight{
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+}
+.verLight:hover{
     background-color: white;
     color: black;
+}
+.verDark{
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+}
+.verDark:hover{
+    background-color: black;
+    color: white;
 }

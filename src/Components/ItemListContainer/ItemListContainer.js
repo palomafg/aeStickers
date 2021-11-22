@@ -3,11 +3,13 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 
 import "./ItemListContainerStyle.css";
-// import { stickers } from '../../data/StickerList.js';
+import { DarkContextUse } from '../../Contexts/DarkContext';
 import ItemList from '../ItemList/ItemList.js';
 import { getFirestore } from '../../services/getFirebase.js';
 
 const ItemListContainer = ( { ctg } ) => {
+
+    const { dark } = DarkContextUse();
 
     const [stks, setStks] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -84,7 +86,7 @@ const ItemListContainer = ( { ctg } ) => {
                 <div className="cargando col-12">
                     <Loader
                     type="ThreeDots"
-                    color="#000000"
+                    color={`${dark? 'white' : 'black'}`}
                     height={90}
                     width={90}
                     timeout={4000}
