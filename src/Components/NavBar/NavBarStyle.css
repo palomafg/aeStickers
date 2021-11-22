@@ -103,36 +103,3 @@
     text-decoration: none;
     color: white;
 }
-
-@media (min-width: 576px) {
-
-    .nav__itemLight{
-        width: 45px;
-        height: 45px;
-        font-size: 1.4rem;
-    }
-    .nav__itemLight{
-        width: 45px;
-        height: 38px;
-    }
-
-    .nav__itemDark{
-        width: 45px;
-        height: 45px;
-        font-size: 1.4rem;
-    }
-    .nav__itemDark{
-        width: 45px;
-        height: 38px;
-    }
-
-    #modoClaro{
-        font-size: 1.3rem;
-    }
-    #cartLight{
-        font-size: 1.3rem;
-    }
-    #cartDark{
-        font-size: 1.3rem;
-    }
-}

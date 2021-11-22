@@ -45,19 +45,19 @@ const NavBar = () => {
                 </button>
 
                 <div className={`${dark? 'nav__itemDark' : 'nav__itemLight'} col-1 m-1 p-1`}>
-                    <NavLink to="/aeStickers/categoria/ojos" activeClassName="nav__itemSelectedLight">
+                    <NavLink to="/aeStickers/categoria/ojos" activeClassName={`${dark? 'nav__itemSelectedDark' : 'nav__itemSelectedLight'}`}>
                         <ImEye/>
                     </NavLink>
                 </div>
 
                 <div className={`${dark? 'nav__itemDark' : 'nav__itemLight'} col-1 m-1 p-1`}>
-                    <NavLink to="/aeStickers/categoria/narices" activeClassName="nav__itemSelectedLight">
+                    <NavLink to="/aeStickers/categoria/narices" activeClassName={`${dark? 'nav__itemSelectedDark' : 'nav__itemSelectedLight'}`}>
                         <GiNoseFront/>
                     </NavLink>
                 </div>
 
                 <div className={`${dark? 'nav__itemDark' : 'nav__itemLight'} col-1 m-1 p-1`}>
-                    <NavLink to="/aeStickers/categoria/bocas" activeClassName="nav__itemSelectedLight">
+                    <NavLink to="/aeStickers/categoria/bocas" activeClassName={`${dark? 'nav__itemSelectedDark' : 'nav__itemSelectedLight'}`}>
                         <GiLips/>
                     </NavLink>
                 </div>
